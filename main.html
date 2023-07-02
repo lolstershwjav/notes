@@ -1,0 +1,88 @@
+Python-Byju Classes
+
+
+Modules
+- [ ] random
+- [ ] open-cv (cv2)
+- [ ] numpy
+- [ ] matplotlib
+- [ ] tensorflow
+- [ ] Pyautogui - keyboard controls
+- [ ] time
+- [ ] mediapipe - hand detection
+- [ ] math - allows for complicated calculations (square root, etc.)
+- [ ] imutils  - helps to add utilities/ helps augment images
+
+
+Basics
+- [ ] for loops
+- [ ] Date = input(“what is the date”)   - stores userinput
+- [ ] arrays [] - can be modified
+- [ ] touples () - can’t be modified
+
+Image processing
+- [ ] Used cv2 and numpy, dumpy allowed us to modify arrays
+- [ ] Change image from normal colors to black and white, add text to images
+
+Image detection
+- [ ] cv2
+- [ ] imread() to read images
+- [ ] waitKey() to display images in milliseconds
+- [ ] Roi- region of interest
+- [ ] Harcasscade- face detection
+- [ ] Landmarks - ridges of fingers
+
+Neural Network/ Cnn
+- [ ] Used tensorflow to help process images and create algorithms
+- [ ] Used tensorflow sequential class to help train, test and predict
+- [ ] First trains model by breaking down image into notable parts and removing unnecessary parts of image. Also makes image smaller so that training will be faster and take less space.
+- [ ] 3 parts optimizer, loss function, and metrics
+- [ ] Optimizer makes the program run more accurately
+- [ ] Loss function shows how badly/ unacurate the model is
+- [ ] Metrics show how well/acurate the model is
+
+Cv2 functions
+- [ ] cv2.VideoCapture(“Path to video”) - allows to put video into cv2
+- [ ] cv2.TrackerCSRT_create()  - creates tracker/ row
+- [ ] tracker.init() - starts tracking algorithm
+- [ ] Cv2.putText(actualImage, “Message”, (50,50)<—position, cv2.FONT_HERSHEY_SIMPLEX <——Font, FontSize, Rgb, FontWeight)
+- [ ] cv2.imShow(“Header”, actualImage) <— displays image
+- [ ] cv2.waitKey() displays image for time in milliseconds
+- [ ] cv2.destroyALLwindows() closes program
+
+
+TensorFlow functions
+- [ ] model = tf.keras.models.load_model(“KerasModel.h5”)  - loads model into tensor flow
+- [ ] model.predict(ImageThatIsBeingPredicted) - predicts 
+- [ ] Model.fit() - used for training
+- [ ] from tensorflow.keras.preprocessing.image import ImageDataGenerator.  — imports image data generator to convert image into different arrays and them manipulate them
+- [ ] from tensorflow.keras.preprocessing.image import img_to_array, load_img - helps convert image to array
+- [ ] model = tf.keras.models.Sequential([    different pooling layers    ])
+- [ ] tf.keras.layers.Conv2D(64, (3,3), activation='relu’, input_shape=(180, 180, 3)) — 64, (3,3)  Are filters for the arryays ———— input_shape is the image size   ———   uses relu to preprocess image
+- [ ] Conv2D - extracts features
+- [ ] tf.keras.layers.Flatten(),    Flatten the results to feed into a Dense Layer
+- [ ] tf.keras.layers.Dropout(0.5) —— removes portion of image (50% since 0.5)
+- [ ] tf.keras.layers.Dense(512, activation='relu'), ———uses relu to store pixels —>512
+- [ ] img_files = os.listdir(testing_image_directory) —- fetches  directory for every file inside of directory and stores it in img_files
+
+MatplotLib Functions
+- [ ]   pyplot.subplot(3,3, i+1)  Creates a 3 by 3 grid and I+1 helps plot each of the subplots
+- [ ] pyplot.imshow(img_2.astype("uint8")) —— converting img2 to positive integers since matplotlib cannot handle negative numbers
+- [ ] pyplot.title(predict_class[0]) ———Gives Label on every image after prediction
+- [ ] pyplot.axis("off") —— no axis
+- [ ] pyplot.show() shows graph/plot
+
+- [ ] acc = bob.history["accuracy”], val_acc = bob.history["val_accuracy"]
+——stores graph information into variables
+- [ ] pyplot.plot(epoch , acc , "r", label = "training accuracy")
+- [ ] pyplot.legend() creates graph legend
+
+
+
+
+
+
+
+
+
+
